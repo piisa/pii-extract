@@ -1,0 +1,43 @@
+
+
+from pii_manager import PiiEnum
+
+ADDRESS = r'''
+  \d{1,5}
+  [\w\s]{1,30}
+  (?: street|st|avenue|ave|road|rd|highway|hwy|square|sq|
+      trail|trl|drive|dr|court|ct|park|parkway|pkwy|circle|cir|boulevard|blvd )
+  \W? 
+  (?=\s|$)
+  (?:
+      .{0,20} 
+      \b 
+      \d{5}
+      (?:[-\s]\d{4})?\b
+  )?
+'''
+
+
+(?:[-\s]\d{4})?\b|\d{1,4} [\w\s]{1,20} (?:street|st|avenue|ave|road|rd|highway|hwy|square|sq|trail|trl|drive|dr|court|ct|park|parkway|pkwy|circle|cir|boulevard|blvd)
+\W?(?=\s|$)',
+'''
+
+r'\d{1,4} [\w\s]{1,20} (?:street|st|avenue|ave|road|rd|highway|hwy|square|sq|trail|trl|drive|dr|court|ct|park|parkway|pkwy|circle|cir|boulevard|blvd)\W?(?=\s|$).{0,20}\b\d{5}(?:[-\s]\d{4})?\b|\d{1,4} [\w\s]{1,20} (?:street|st|avenue|ave|road|rd|highway|hwy|square|sq|trail|trl|drive|dr|court|ct|park|parkway|pkwy|circle|cir|boulevard|blvd)\W?(?=\s|$)',
+
+
+PII_TASKS = [
+    {
+        "pii": PiiEnum.POSTAL_ADDRESS,
+        "type": "",
+        "task": PATTERN_INT_PHONE,
+        "name": "postal addresses",
+        "doc": "",
+        "context": {"value": ["ph", "phone", "fax"], "width": [16, 0], "type": "word"},
+    }
+]
+    re.IGNORECASE|re.UNICODE),
+    None,
+    None),
+   (re.compile(r'P\.? ?O\.? Box \d+', re.IGNORECASE|re.UNICODE), None, None)]
+
+ libpostal/

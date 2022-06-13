@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "date": "2000-01-01T00:00:00+00:00",
+    "format": "pii:pii-collection",
+    "format_version": "0.2.1",
+    "detectors": {}
+  },
+  "pii_list": [
+    {
+      "type": "CREDIT_CARD",
+      "value": "4273 9666 4581 5642",
+      "chunkid": 4,
+      "subtype": "standard credit card",
+      "lang": "en",
+      "docid": "00000-11111",
+      "start": 25,
+      "end": 44
+    },
+    {
+      "type": "BITCOIN_ADDRESS",
+      "value": "1AGNa15ZQXAZUgFiqJ2i7Z2DPU2J6hW62i",
+      "chunkid": 4,
+      "lang": "en",
+      "docid": "00000-11111",
+      "start": 86,
+      "end": 120
+    }
+  ]
+}

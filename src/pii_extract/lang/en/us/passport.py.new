@@ -1,0 +1,19 @@
+
+PII_TASKS = [
+    {
+        "type": "regex",
+        "task": r"\b \d{9} \b",
+        "context": 
+
+(
+                re.compile(),
+                (
+                    "us",
+                    "united",
+                    "states",
+                    "passport",
+                    "passport#",
+                    "travel",
+                    "document",
+                ),
+            ),
