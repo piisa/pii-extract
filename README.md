@@ -1,3 +1,8 @@
+
+**Note: this repository is obsolete. It has been superseded by [pii-extract-base](https://github.com/piisa/pii-extract-base) and [pii-extract-plg-regex](https://github.com/piisa/pii-extract-plg-regex)**
+
+-----------------------
+
 # Pii Extractor
 
 This repository builds a Python package that performs PII detection for text
